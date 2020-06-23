@@ -51,7 +51,7 @@ body{
 
 /* Form Style */
 
-form {
+.app_form {
     max-width: 600px;
     display: flex;
     flex-direction: column;
