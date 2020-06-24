@@ -21,6 +21,7 @@ Make sure all your dependencies are installed in your terminal or updated to the
 
 ## Attributions
 
+* Starter code from [Udacity](https://github.com/udacity/fend/tree/refresh-2019/projects/weather-journal-app)
 * Adding a video to the background with [iEatWebsites on Youtube](https://www.youtube.com/watch?v=05ZHUuQVvJM)
 * Backrgound videos from [Free Stock Video](https://www.youtube.com/watch?v=tnGaCZZ5Z28) on Youtube.
 * Understanding [Express](https://expressjs.com/en/guide/routing.html) routing.
