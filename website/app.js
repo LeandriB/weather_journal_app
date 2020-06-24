@@ -1,7 +1,7 @@
 /* Global Variables */
 // Base URL and API key
 const baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-const apiKey ='2549a3de026cf6e362be843b98d97872';
+const apiKey ='&APPID=2549a3de026cf6e362be843b98d97872&units=imperial';
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -29,7 +29,7 @@ function performAction(event) {
 
 // Function to GET web API data
 const getWeatherData = async(baseURL, apiKey, userZip) => {
-    const response  = await fetch(baseURL + userZip + '&APPID=' + apiKey + '&units=imperial');
+    const response  = await fetch(baseURL + userZip + apiKey);
     try {
         const data = await response.json();
         return data;
