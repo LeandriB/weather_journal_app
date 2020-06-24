@@ -21,7 +21,7 @@ function performAction(event) {
         let date = new Date(data.dt * 1000)
         let dateString = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
         // Add data to POST request
-        postWeatherData('/add', {temperature: data.main.temperature, date: dateString, content: content});
+        postWeatherData('/add', {temperature: data.main.temp, date: dateString, content: content});
         // Update the UI dynamically
         updateUI('/all');
     });
@@ -64,7 +64,7 @@ const updateUI = async() => {
     try {
         const allData = await request.json();
         document.getElementById('date').innerHTML = allData.date;
-        document.getElementById('temperature').innerHTML = allData.temperature;
+        document.getElementById('temperature').innerHTML = allData.temperature + "&deg;F";
         document.getElementById('content').innerHTML = allData.content;
     } catch(error) {
         console.log('error', error);
