@@ -2,19 +2,21 @@
 
 ## About
 
-The goal for this project is to create an asynchronous web app that uses Web API and user data to dynamically update the UI. This will require modifying the server.js file and the website/app.js file. You can see index.html for element references, and once you are finished with the project steps, you can use style.css to style your application to customized perfection.
+The goal for this project is to create an asynchronous web app that uses Web API and user data to dynamically update the UI. This will require modifying the ```server.js``` file and the ```website/app.js``` file. You can see ```index.html``` for element references, and once you are finished with the project steps, you can use ```style.css``` to style your application to customized perfection.
 
 ## How to run this program
 
-1. Start up the server in the terminal using Node JS: node server.js and open the web page through a localhost in your browser.
+Make sure all your dependencies are installed in your terminal or updated to the lasest version, ```cd``` into the project folder and start up the server in the terminal using ```node server.js``` and open the web page through a localhost in your browser.
 
 ## Dependencies
 
 * HTML
 * CSS
 * Javascript
-* NodeJS
-* ExpressJS
+* [NodeJS](https://nodejs.org/en/download/)
+* [ExpressJS](https://www.npmjs.com/package/express)
+* [BodyParser](https://www.npmjs.com/package/body-parser)
+* [Cors](https://www.npmjs.com/package/cors)
 * API from [OpenWeather](https://openweathermap.org/)
 
 ## Attributions
